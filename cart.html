@@ -3,9 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BiteBox Cart</title>
+    <script src="https://kit.fontawesome.com/e154763803.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Noto+Sans+Chakma&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+NZ+Guides&family=Rubik+Storm&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     
-</body>
+
+<!-- This is Header Section -->
+    <header>
+
+        <nav>
+         
+
+                <!-- logo -->
+                 <!-- <h1>BiteBox</h1> -->
+                  <img src="images/logo.png" alt="logo" width="180">      
+
+                <ul>
+                    <li><a href="home.html" class="active">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="bitedeals.html">Bite Deals</a></li>
+                    <li><a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a></li>
+                    <li><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i>Login</a></li>
+
+                </ul>
+        
+        </nav>
+    </header>
+    <!-- header ends here -->
+
+
+
+    <!-- Start cart section -->
+    <section class="cart">
+         <h2>Your cart</h2>
+        <table>
+            <thead>
+                <th>Iteam</th>
+                <th>Price</th>
+                <th>Qty</th>
+                <th>Total</th>
+                <th>Remove</th>
+                
+            </thead>
+
+            <tbody>
+
+                 <tr>
+                <td class="item">
+                    <img src="images/burger-card1.png">
+                    <div>
+                        <h4>Cheese Burger</h4>
+                        <p>Juicy grilled burger</p>
+                    </div>
+                </td>
+                <td>₹199</td>
+                <td>
+                    <div class="qty-box">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                </td>
+                <td>₹199</td>
+                <td><button class="remove">❌</button></td>
+            </tr>
+
+            
+
+            <tr>
+                <td class="item">
+                    <img src="images/pizza-card2.png">
+                    <div>
+                        <h4>Capsicum Pizza</h4>
+                        <p>Loaded with cheese</p>
+                    </div>
+                </td>
+                <td>₹249</td>
+                <td>
+                    <div class="qty-box">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                </td>
+                <td>₹249</td>
+                <td><button class="remove">❌</button></td>
+            </tr>
+
+
+            
+            <tr>
+                <td class="item">
+                    <img src="images/alfredo-card4.png">
+                    <div>
+                        <h4>Alfredo Pasta</h4>
+                        <p>Creamy white sauce</p>
+                    </div>
+                </td>
+                <td>₹229</td>
+                 <td>
+                    <div class="qty-box">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                </td>
+                <td>₹229</td>
+                <td><button class="remove">❌</button></td>
+            </tr>
+
+
+
+             <tr class="grand-total">
+                    <td colspan="3">Grand Total</td>
+                <td>₹797</td>
+                <td><button>Proceed</button></td>
+            </tr>
+
+
+            </tbody>
+        </table>
+
+
+
+    </section>
+
+    <!-- End cart section -->
+
+
+     </body>
 </html>

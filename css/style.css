@@ -1,0 +1,511 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 15px 40px;
+
+}
+
+ ul{
+
+    display: flex;
+    list-style: none;
+    gap: 20px;
+
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+
+nav h2{
+
+    color:white;
+}
+
+
+nav a:hover{
+
+    color: red;
+}
+
+nav li:last-child a {
+    background-color: red;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+nav li:last-child a:hover{
+    background: #cc0000;
+    color: black;
+}
+
+nav a.active{
+    color: red;
+    font-weight: bold;
+    border-bottom: 2px solid red;
+}
+
+/* banner */
+.hero{
+    height: 90vh;
+    background:url("../images/banner.jpg") no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.hero button{
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero button:hover{
+    background: darkred;
+}
+
+
+/* video part */
+
+.video-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 40px;
+}
+.video-text{
+    flex: 1;
+}
+.video-box{
+    flex: 1;
+}
+
+.video-box video{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.video-text h2{
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.video-text p{
+    font-size: 18px;
+    color: #444;
+}
+
+
+/* about section */
+
+.about{
+    text-align: center;
+    padding: 60px 20px;
+    background: #f9f9f9;
+
+}
+
+.about h2{
+    font-size:  32px;
+    margin-bottom: 20px;
+    color: rgba(255, 0, 0, 0.615);
+}
+
+.about p{
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+
+}
+
+/* about page design */
+/* Design card */
+
+.card{
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.card img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.card button{
+
+    background: red;
+    color: white;
+    border:none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.card button:hover{
+    background: darkred;
+}
+
+.menu-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.category-icons{
+    display: flex;
+    gap: 20;
+    padding: 20px;
+    overflow: auto;
+    background: #fff;
+    justify-content: center;
+
+}
+
+.icon-box{
+    min-width: 100px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icon-box img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #eee;
+    padding: 5px;
+}
+
+.icon-box p{
+    margin-top: 8px;
+    font-size: 14px;
+
+}
+
+.icon-box img:hover{
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.icon-box p:hover{
+    color: red;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* cart page design */
+/* style the table */
+table{
+    width: 70%;
+    border-collapse: collapse;
+    background: #fff;
+   border-radius: 10px;
+   overflow: hidden;
+   margin: auto;
+}
+
+thead{
+    background: #f80202;
+    color: white;
+}
+
+th,td {
+    padding: 15px;
+    text-align: center;
+
+}
+
+tbody tr{
+    border-bottom: 1px solid #ddd;
+}
+
+.item{
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.item img{
+    width: 70px;
+    height: 70px;
+    object-fit:cover;
+    border-radius: 10px;
+}
+
+.remove {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.remove :hover{
+    background:darkred ;
+}
+
+.grand-total td{
+    font-weight: bold;
+    font-size: 18px;
+}
+.grand-total button{
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.grand-total button:hover{
+    background: darkred;
+}
+
+.qty-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.qty-box button{
+    width: 28px;
+    height: 28px;
+    border: none;
+    background: red;
+    color: white;
+    font: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.qty-box button:hover{
+    background: #cc0000;
+}
+
+.qty-box span{
+    font-size: 16px;
+    font-weight: bold;
+    min-width: 20px;
+    text-align: center;
+}
+
+
+/* =======Auth css ========= */
+ 
+/* login and  regester page */
+
+.auth-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,#000,#1c1c1c);
+
+}
+
+.auth-box{
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0,0, 0,0.3);
+}
+.auth-box h2{
+
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.auth-box input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.auth-box input:focus{
+    border-color: red;
+}
+.auth-box button{
+    width: 100%;
+    padding: 10px;
+    background: red;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor:pointer;
+}
+
+.auth-box button:hover{
+    background-color: #f80202;
+}
+
+.auth-box p{
+    margin-top: 15px;
+    font-size: 14px ;
+}
+.auth-box a{
+    color:red;
+    text-decoration: none;
+}
+
+.deals-page{
+    padding: 40px;
+    background: #f8f8f8;
+}
+.deal-hero{
+    background: linear-gradient(135deg , rgb(0,0,0),#202020);
+    color: white;
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.deal-hero h1{
+    font-size: 40px;
+
+}
+
+.deal-hero p{
+    font-size: 18px;
+}
+
+
+/* Title */
+
+.section-title{
+
+    margin: 30px 0 20px;
+    font-size: 28px;
+    color: #000;
+}
+
+.combo-section{
+    padding: 40px;
+    background: #fff;
+
+}
+
+.combo-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+
+.combo-card{
+    background: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+    transition:0.3s ;
+}
+
+.combo-card img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+
+}
+
+.combo-card h4{
+    margin: 10px 0;
+}
+.combo-card h4 span{
+    text-decoration: line-through;
+    color: gray;
+    margin-right: 10px;
+}
+.combo-card button{
+    background: red;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.combo-card button:hover{
+    background: #cc0000;
+}
+.combo-card:hover{
+    transform: translateY(-8px);
+}
+
+/* day wise offer design */
+
+.deals-container{
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.deal-card{
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3;
+    box-shadow: 0 5px 15px rgba(0,0, 0, 0.1);
+}
+
+.deal-card h3{
+    margin-bottom: 10px;
+
+}
+.deal-card span{
+   
+   display: inline-block;
+   margin-top: 10px;
+   padding: 5px 10px;
+   background: black;
+   color: white;
+   border-radius: 5px;
+
+
+}
+
+.deal-card:hover {
+    transform: translateY(-8px);
+}
+
+.red{ border-top: 5px solid red;   }
+
+.yellow{ border-top: 5px solid yellow;}
+.green{ border-top: 5px solid green ;}
+.blue{ border-top: 5px soid blue;}
