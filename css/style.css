@@ -64,6 +64,7 @@ nav a.active{
     align-items: center;
     color: white;
 }
+
 .hero button{
     margin-top: 15px;
     padding: 10px 20px;
@@ -88,6 +89,7 @@ nav a.active{
     padding: 50px;
     gap: 40px;
 }
+
 .video-text{
     flex: 1;
 }
@@ -117,7 +119,6 @@ nav a.active{
     text-align: center;
     padding: 60px 20px;
     background: #f9f9f9;
-
 }
 
 .about h2{
@@ -130,24 +131,25 @@ nav a.active{
     max-width: 700px;
     margin: auto;
     font-size: 18px;
-    color: #555;
+    color: #555555;
     line-height: 1.6;
-
 }
 
 /* about page design */
 /* Design card */
 
 .card{
-    background: #fff;
+    background: #ffffff;
     padding: 15px;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: horizontal-offset vertical-offset blur-radius  color; */
 }
+
 .card img{
     width: 100%;
-    object-fit: cover;
+    object-fit: cover;  
 }
 
 .card button{
@@ -177,9 +179,8 @@ nav a.active{
     gap: 20;
     padding: 20px;
     overflow: auto;
-    background: #fff;
+    background: #ffffff;
     justify-content: center;
-
 }
 
 .icon-box{
@@ -194,14 +195,13 @@ nav a.active{
     height: 70px;
     object-fit: cover;
     border-radius: 50%;
-    border: 2px solid #eee;
+    border: 2px solid #eeeeee;
     padding: 5px;
 }
 
 .icon-box p{
     margin-top: 8px;
     font-size: 14px;
-
 }
 
 .icon-box img:hover{
@@ -262,14 +262,13 @@ tbody tr{
 
 .remove {
     background: red;
-    color: white;
     border: none;
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 5px;
 }
 
-.remove :hover{
+.remove:hover{
     background:darkred ;
 }
 
@@ -291,6 +290,9 @@ tbody tr{
 .grand-total button:hover{
     background: darkred;
 }
+
+
+/* offer */
 
 .qty-box{
     display: flex;
@@ -509,3 +511,67 @@ tbody tr{
 .yellow{ border-top: 5px solid yellow;}
 .green{ border-top: 5px solid green ;}
 .blue{ border-top: 5px soid blue;}
+
+
+
+footer{
+
+    background: #111111;
+    color: #cccccc;
+    padding: 40px;
+
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+
+.footer-box h2,
+.footer-box h3 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer-box span{
+    color: red;
+}
+
+footer ul{
+    display: block;
+    list-style:none;
+    padding: 0;
+}
+
+footer a{
+    color: #cccccc;
+    text-decoration: none;
+}
+footer a:hover {
+    color: red;
+}
+
+.footer-bottom{
+    text-align: center;
+      margin-top: 30px;
+    padding-top: 10px;
+    border-top: 1px solid #333;
+    font-size: 14px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #ccc;
+    background: #222;
+    padding: 10px;
+    border-radius: 50%;
+   
+}
+
+.social-icons a:hover {
+    background: red;
+    color: white;
+    
+}

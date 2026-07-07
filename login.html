@@ -39,6 +39,8 @@
     <!-- header ends here -->
 
 
+    
+
      <!-- start authentication section -->
 
      <section class="auth-container">
@@ -47,10 +49,28 @@
             <h2>Login to Bite <span>Box</span></h2>
             <form action="">
 
-                <input type="email" placeholder="Enter Email" required>
-                <input type="password" placeholder="Enter password" required>
-                <button type=" submit">Login</button>
+                <input type="email" placeholder="Enter Email" id="email" required>
+
+            
+
+                <div  style="position: relative;">               
+                    <input type="password" placeholder="Enter password"    id="password" required>
+                    <span onclick="togglePassword()"  style="position: absolute; right:10px ; top: 50%; transform:translateY(-50%) ;cursor: pointer;">
+                        <i class="fa-solid fa-eye"></i>
+                    </span>
+
+                    
+
+                </div>
+                <button type="button" onclick="login()">Login</button>
             </form>
+
+
+            
+            <p id="error" style="color: red;"></p>
+
+
+
             <p><a href="signup.html">Forget Password</a></p>
             <p>Don't have an accout <a href="signup.html"> Signup</a></p>
 
@@ -61,6 +81,6 @@
 
 
 
-
+<script src="js/scripts.js"></script>
      </body>
 </html>
