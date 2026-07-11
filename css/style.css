@@ -342,7 +342,7 @@ tbody tr{
     border-radius: 10px;
     width: 320px;
     text-align: center;
-    box-shadow: 0 8px 25px rgba(0, 0,0, 0,0.3);
+    box-shadow: 0px 8px 30px rgb(147, 131, 101);
 }
 .auth-box h2{
 
@@ -412,7 +412,7 @@ tbody tr{
 
 .section-title{
 
-    margin: 30px 0 20px;
+    margin: 30px 0px 20px;
     font-size: 28px;
     color: #000;
 }
@@ -430,12 +430,12 @@ tbody tr{
 }
 
 .combo-card{
-    background: 20px;
+    background: #fff;
     padding: 20px;
     border-radius: 12px;
     text-align: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
-    transition:0.3s ;
+      transition:0.3s ;/* ;CSS transitions allows you to change property values smoothly, over a given duration */
 }
 
 .combo-card img{
@@ -446,7 +446,7 @@ tbody tr{
 }
 
 .combo-card h4{
-    margin: 10px 0;
+    margin: 10px 0px;
 }
 .combo-card h4 span{
     text-decoration: line-through;
@@ -464,6 +464,19 @@ tbody tr{
 .combo-card button:hover{
     background: #cc0000;
 }
+
+
+/* Moves the element along the Y-axis (vertical direction).
+
+-8px → Move up by 8 pixels.
+8px → Move down by 8 pixels. */
+
+/* translateY() Moves up or down
+
+translateX()Moves left or right */
+
+/* translate means move. */
+
 .combo-card:hover{
     transform: translateY(-8px);
 }
@@ -491,26 +504,32 @@ tbody tr{
 
 }
 .deal-card span{
-   
    display: inline-block;
    margin-top: 10px;
    padding: 5px 10px;
    background: black;
    color: white;
    border-radius: 5px;
-
-
 }
+
 
 .deal-card:hover {
     transform: translateY(-8px);
 }
 
-.red{ border-top: 5px solid red;   }
+.red{
+     border-top: 5px solid red;   
+    }
 
-.yellow{ border-top: 5px solid yellow;}
-.green{ border-top: 5px solid green ;}
-.blue{ border-top: 5px soid blue;}
+.yellow{
+     border-top: 5px solid yellow;
+    }
+.green{ 
+    border-top: 5px solid green ;
+}
+.blue{ 
+    border-top: 5px soid blue;
+}
 
 
 
